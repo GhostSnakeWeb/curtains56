@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +13,7 @@
     <!-- Syles -->
     <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
+
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed&display=swap" rel="stylesheet">
@@ -40,6 +41,60 @@
         <a href="" class="socials__item socials__item--instagram"></a>
         <a href="" class="socials__item socials__item--vk"></a>
       </div>
+    </div>
+    <div class="row row--with-paddings">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a href="#" class="navbar-brand">Навигация</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Главная</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Товары</a>
+              <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                <a href="#" class="dropdown-item">Карнизы и аксессуары</a>
+                <a href="#" class="dropdown-item">Ткани</a>
+                <a href="#" class="dropdown-item">Солнцезащитные системы</a>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="jobsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Наши работы</a>
+              <div class="dropdown-menu" aria-labelledby="jobsDropdown">
+                <a href="#" class="dropdown-item">Кухни</a>
+                <a href="#" class="dropdown-item">Спальни</a>
+                <a href="#" class="dropdown-item">Гостиные</a>
+                <a href="#" class="dropdown-item">Детские</a>
+                <a href="#" class="dropdown-item">Другие помещения</a>
+                <a href="#" class="dropdown-item">Фотопечать на ткани</a>
+                <a href="#" class="dropdown-item">Вышивка</a>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Услуги</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">О нас</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Контакты</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Поиск" aria-label="Поиск">
+            <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Поиск</button>
+          </form>
+        </div>
+      </nav>
     </div>
   </header>
       <div class="row slider">
@@ -141,6 +196,8 @@
       <p>Адрес:<a href="https://goo.gl/maps/PtKe3vNm5Jt" target="_blank">ул. Комсомольская, 7</a></p>
       <p>Телефон: <a href="tel:83532693008">+7 (3532) 69-30-08</a></p>
       <p>Email: <a href="mailto:direct@gnezdo56.ru">direct@gnezdo56.ru</a></p>
+      <a href="" class="socials__item socials__item--instagram"></a>
+      <a href="" class="socials__item socials__item--vk"></a>
     </div>
     <div class="col-12 col-sm-4 ml-auto">
       <h4>Часы работы</h4>
@@ -150,11 +207,16 @@
     </div>
   </div>
   <div class="row">
-    <div class="col col-sm-4">© 2019 Студия текстильного дизайна "GNEZDO"</div>
-    <div class="col col-sm-4 ml-auto">Создание сайта <a href="websweet.ru" target="_blank">Websweet.ru</a></div>
+    <div class="col-12 col-sm-4">© 2019 Студия текстильного дизайна "GNEZDO"</div>
+    <div class="col-12 col-sm-4 ml-auto">Создание сайта <a href="websweet.ru" target="_blank">Websweet.ru</a></div>
   </div>
   </div>
 </footer>
+
+
+    <script src="libs/jquery/jquery-3.4.0.min.js"></script>
+    <script src="libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
 </html>
