@@ -154,6 +154,43 @@ footer{
     background-image: url('../img/vk.png');
 }
 
+
+/*Меню*/
+    .menu ul{
+        list-style: none;
+    }
+
+    .menu>ul>li{
+        position:relative;
+        display: inline-block;
+        margin-right: 40px;
+    }
+
+    .menu li:hover{
+        color:#5e403d;
+    }
+
+    .dropdown li:hover{
+        background-color: #eeeeee ;
+    }
+
+    .menu a{
+        color: #5e402d;
+        font-size: 25px;
+    }
+    .dropdown{
+        display: none;
+        position: absolute;
+        z-index: 10;
+        background-color: #fff;
+        box-shadow: 0 2px 4px 0 #444;
+
+    }
+    .dropdown li{
+        padding:10px;
+        display: block;
+    }
+
 /*Наши работы*/
 
 .jobs{
