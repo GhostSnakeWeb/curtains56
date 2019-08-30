@@ -305,6 +305,28 @@ footer {
     padding: 4px;
 }
 
+
+/*Галерея*/
+.gallery-wrapper__gallery{
+    padding:5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.gallery-wrapper__gallery li{
+    width:30%;
+    height: 100%;
+    margin-bottom: 10px;
+    display: inline-block;
+    list-style: none;
+}
+
+.gallery-wrapper__gallery li img{
+    padding: 5px;
+    box-shadow: 0px 1px 8px 0 #777;
+}
 @media (min-width: 768px) {
     .slider {
         display: flex;
