@@ -191,6 +191,25 @@ footer{
         display: block;
     }
 
+
+/* Слайдер*/
+
+.carousel{
+    margin:5px -15px;
+    padding:15px;
+}
+
+.carousel-inner{
+    /*overflow: visible;*/
+}
+
+.carousel-item, .carousel-item.active{
+     display: flex;
+ }
+
+.carousel-indicators li{
+    color: #5e402d;
+}
 /*Наши работы*/
 
 .jobs{
