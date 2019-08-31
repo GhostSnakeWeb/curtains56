@@ -1,13 +1,15 @@
 $(document).ready(function() {
 
-	/* Call plugins here ...*/
+	// Выпадающее меню
     $('.menu>ul>li').mouseenter(function () {
-        $(this).find('.dropdown').css("display",'block');
-        
+        $(this).find('.dropdown').slideDown('slow')        
     })
 
     $('.menu>ul>li').mouseleave(function () {
-        $(this).find('.dropdown').css("display",'none');
+        $(this).find('.dropdown').slideUp('slow')
     })
+
+    // Мобильная навигация
+	jQuery('.menu').meanmenu();
 	
 });

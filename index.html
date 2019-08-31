@@ -13,10 +13,12 @@
   <!-- Syles -->
   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/meanmenu.css">
 
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -46,39 +48,33 @@
     <div class="row row--with-paddings">
       <div class="col-12">
         <nav class="menu">
-          <ul>
-            <li><a href="#">Главная</a></li>
-
-
-            <li>
-              <a href="#">Товары</a>
-              <ul class="dropdown">
-                <li><a href="#">Карнизы и аксессуары</a></li>
-                <li><a href="#">Ткани</a></li>
-                <li><a href="#">Солнцезащитные системы</a></li>
-              </ul>
-            </li>
-
-            <li>
-              <a href="#">Наши работы</a>
-              <ul class="dropdown">
-                <li><a href="#">Кухни</a></li>
-                <li><a href="#">Спальни</a></li>
-                <li><a href="#">Гостиные</a></li>
-                <li><a href="#">Детские</a></li>
-                <li><a href="#">Другие помещения</a></li>
-                <li><a href="#">Фотопечать на обоях</a></li>
-                <li><a href="#">Вышивка</a></li>
-              </ul>
-            </li>
-
-            <li><a href="#">Услуги</a></li>
-
-            <li><a href="#">О нас</a></li>
-
-            <li><a href="#">Контакты</a></li>
-
-          </ul>
+            <ul>
+                <li><a href="#">Главная</a></li>
+                <li class="menu-item-has-children"><a href="#">Товары</a>
+                    <ul>
+                        <li><a href="#">Карнизы и аксессуары</a></li>
+                        <li class="menu-item-has-children">
+                            <a href="#">Ткани</a>
+                            <ul>
+                                <li><a href="#">Карнизы</a></li>
+                                <li><a href="#">Ткани</a></li>
+                                <li><a href="#">Системы</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Солнцезащитные системы</a></li>
+                    </ul>
+                </li>
+                <li class="menu-item-has-children"><a href="#">Наши работы</a>
+                    <ul>
+                        <li><a href="#">Кухни</a></li>
+                        <li><a href="#">Спальни</a></li>
+                        <li><a href="#">Гостинные</a></li>
+                    </ul>
+                </li>
+                <li ><a href="#">Услуги</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
         </nav>
       </div>
     </div>
@@ -123,43 +119,40 @@
     </div>
   </div>
 </div>
-
-
-
 <section class="row row--with-paddings d-flex flex-column justify-content-center">
   <h2>Наши работы</h2>
   <ul class="jobs d-flex flex-row justify-content-between flex-wrap">
-    <li class="jobs__item col-12 col-sm-4">
+    <li class="jobs__item col-12 col-md-4">
       <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
         <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
         <h3>Шторы для Гостиной</h3>
       </a>
     </li>
-    <li class="jobs__item col-12 col-sm-4">
+    <li class="jobs__item col-12 col-md-4">
       <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
         <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
         <h3>Шторы для Гостиной</h3>
       </a>
     </li>
-    <li class="jobs__item col-12 col-sm-4">
+    <li class="jobs__item col-12 col-md-4">
       <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
         <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
         <h3>Шторы для Гостиной</h3>
       </a>
     </li>
-    <li class="jobs__item col-12 col-sm-4">
+    <li class="jobs__item col-12 col-md-4">
       <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
         <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
         <h3>Шторы для Гостиной</h3>
       </a>
     </li>
-    <li class="jobs__item col-12 col-sm-4">
+    <li class="jobs__item col-12 col-md-4">
       <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
         <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
         <h3>Шторы для Гостиной</h3>
       </a>
     </li>
-    <li class="jobs__item col-12 col-sm-4">
+    <li class="jobs__item col-12 col-md-4">
       <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
         <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
         <h3>Шторы для Гостиной</h3>
@@ -170,19 +163,31 @@
 <section class="row row--with-paddings d-flex flex-column justify-content-center">
   <h2>Наши Материалы</h2>
   <ul class="materials d-flex flex-row justify-content-between flex-wrap">
-    <li class="materials__item col-12 col-sm-4">
+    <li class="jobs__item col-12 col-md-4">
       <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
         <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
         <h3>Шторы для Гостиной</h3>
       </a>
     </li>
-    <li class="materials__item col-12 col-sm-4">
+    <li class="jobs__item col-12 col-md-4">
       <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
         <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
         <h3>Шторы для Гостиной</h3>
       </a>
     </li>
-    <li class="materials__item col-12 col-sm-4">
+    <li class="jobs__item col-12 col-md-4">
+      <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
+        <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
+        <h3>Шторы для Гостиной</h3>
+      </a>
+    </li>
+    <li class="jobs__item col-12 col-md-4">
+      <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
+        <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
+        <h3>Шторы для Гостиной</h3>
+      </a>
+    </li>
+    <li class="jobs__item col-12 col-md-4">
       <a href="#" class=" d-flex flex-column justify-content-center align-items-center">
         <img src="img/Гостинные/1.jpg" alt="Шторы для гостиной">
         <h3>Шторы для Гостиной</h3>
@@ -224,8 +229,8 @@
     <h2>Контактная информация</h2>
     <div class="row">
       <div class="col-12 col-sm-8">
-        <h4>Нам приятно создавать неповторимую атмосферу уюта, в которую хочется возвращаться.</h4>
-        <p>Адрес:<a href="https://goo.gl/maps/PtKe3vNm5Jt" target="_blank">ул. Комсомольская, 7</a></p>
+        <h5>Нам приятно создавать неповторимую атмосферу уюта, в которую хочется возвращаться.</h5>
+        <p>Адрес:<a href="https://goo.gl/maps/PtKe3vNm5Jt" target="_blank"> ул. Комсомольская, 7</a></p>
         <p>Телефон: <a href="tel:83532693008">+7 (3532) 69-30-08</a></p>
         <p>Email: <a href="mailto:direct@gnezdo56.ru">direct@gnezdo56.ru</a></p>
         <a href="" class="socials__item socials__item--instagram"></a>
@@ -247,6 +252,7 @@
 
 
 <script src="libs/jquery/jquery-3.4.0.min.js"></script>
+<script src="js/jquery.meanmenu.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
