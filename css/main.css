@@ -295,6 +295,8 @@ footer {
     background-color: #5e402d;
 }
 
+
+
 /*Наши работы*/
 
 .jobs {
@@ -309,9 +311,13 @@ footer {
     box-shadow: 0 6px 6px -6px #444;
 }
 
-.jobs_ li img {
+.jobs li img {
     width: 100%;
     margin-bottom: 10px;
+}
+
+.jobs h3{
+    padding-top:5px;
 }
 
 .row h2 {
@@ -366,9 +372,8 @@ footer {
 }
 
 .slider__picture img {
-    width: 100%;
-    position: relative;
-    top: -50px;
+    height:95%;
+    /*width: 100%;*/
     background-color: #fff;
     box-shadow: 1px 1px 1px 2px rgba(1, 1, 0, .1);
     padding: 4px;
@@ -376,25 +381,34 @@ footer {
 
 
 /*Галерея*/
+.gallery-wrapper{
+    box-shadow: none;
+}
+
 .gallery-wrapper__gallery{
     padding:5px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     list-style: none;
 }
 
 .gallery-wrapper__gallery li{
-    width:30%;
+    width:100%;
     height: 100%;
     margin-bottom: 10px;
     display: inline-block;
     list-style: none;
 }
 
+
+
 .gallery-wrapper__gallery li img{
+    width:100%;
     padding: 5px;
     box-shadow: 0px 1px 8px 0 #777;
+
 }
 @media (min-width: 768px) {
     .slider {
@@ -405,6 +419,18 @@ footer {
 @media (min-width: 576px) {
     .jobs li, .materials li {
         width: 300px;
+    }
+
+    .gallery-wrapper__gallery li{
+        width:30%;
+        height: 100%;
+    }
+    .gallery-wrapper__gallery{
+        flex-direction: row;
+    }
+
+    .gallery-wrapper__gallery li:not(:nth-child(3n)){
+        margin-right: 5%;
     }
 }
 
