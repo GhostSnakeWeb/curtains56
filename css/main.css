@@ -441,6 +441,10 @@ footer {
     background-color: #FFF;
 }
 
+.main-wrapper>.row>.col-12{
+    box-shadow: none;
+}
+
 .container--without-paddings {
     padding: 0;
 }
