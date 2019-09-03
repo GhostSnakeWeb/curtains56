@@ -280,23 +280,6 @@ footer {
     }
 }
 
-/* Слайдер*/
-.carousel {
-    margin: 5px -15px;
-    padding: 15px;
-}
-
-.carousel-inner {
-    /*overflow: visible;*/
-}
-
-
-.carousel-indicators li {
-    background-color: #5e402d;
-}
-
-
-
 /*Наши работы*/
 
 .jobs {
@@ -347,19 +330,33 @@ footer {
     font-style: italic;
 }
 
-.slider {
-    display: none;
-    padding: 30px;
+.owl-carousel {
+    display: none !important;
     background-color: #fff;
     box-shadow: 0 2px 4px 0 #444;
+    margin-bottom: 10px;
 }
 
-.slider__text h2 {
+.owl-carousel__item{
+    padding:30px;
+
+}
+
+.owl-carousel__item h2 {
     font-family: Arabic;
 }
 
-.slider__text button {
-    float: right;
+.carousel-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.carousel-text a{
+    align-self: flex-end;
+}
+
+.carousel-text button {
     display: inline-block;
     height: 50px;
     width: 200px;
@@ -367,18 +364,20 @@ footer {
     color: #fff;
     font-weight: 700;
     outline: none;
-    border-radius: 5px;
+    border-radius: 5px
 
 }
 
-.slider__picture img {
-    height:95%;
-    /*width: 100%;*/
+.owl-carousel__item img {
     background-color: #fff;
     box-shadow: 1px 1px 1px 2px rgba(1, 1, 0, .1);
     padding: 4px;
+    flex-shrink: 2;
 }
 
+.owl-carousel .owl-item img{
+    width: 40% !important;
+}
 
 /*Галерея*/
 .gallery-wrapper{
@@ -411,8 +410,8 @@ footer {
 
 }
 @media (min-width: 768px) {
-    .slider {
-        display: flex;
+    .owl-carousel {
+        display: block !important;
     }
 }
 

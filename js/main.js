@@ -11,5 +11,9 @@ $(document).ready(function() {
 
     // Мобильная навигация
 	jQuery('.menu').meanmenu();
-	
+
+    //OwlCarousel
+    $(".owl-carousel").owlCarousel({
+        items:1
+    });
 });

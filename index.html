@@ -14,7 +14,9 @@
   <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/meanmenu.css">
-
+  <!--  OwlCarousel-->
+  <link rel="stylesheet" href="libs/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="libs/owlcarousel/assets/owl.theme.default.min.css">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Lobster|Roboto+Condensed&display=swap" rel="stylesheet">
@@ -48,77 +50,69 @@
     <div class="row row--with-paddings">
       <div class="col-12">
         <nav class="menu">
-            <ul>
-                <li><a href="#">Главная</a></li>
-                <li class="menu-item-has-children"><a href="#">Товары</a>
-                    <ul>
-                        <li><a href="#">Карнизы и аксессуары</a></li>
-                        <li class="menu-item-has-children">
-                            <a href="#">Ткани</a>
-                            <ul>
-                                <li><a href="#">Карнизы</a></li>
-                                <li><a href="#">Ткани</a></li>
-                                <li><a href="#">Системы</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Солнцезащитные системы</a></li>
-                    </ul>
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li class="menu-item-has-children"><a href="#">Товары</a>
+              <ul>
+                <li><a href="#">Карнизы и аксессуары</a></li>
+                <li class="menu-item-has-children">
+                  <a href="#">Ткани</a>
+                  <ul>
+                    <li><a href="#">Карнизы</a></li>
+                    <li><a href="#">Ткани</a></li>
+                    <li><a href="#">Системы</a></li>
+                  </ul>
                 </li>
-                <li class="menu-item-has-children"><a href="#">Наши работы</a>
-                    <ul>
-                        <li><a href="#">Кухни</a></li>
-                        <li><a href="#">Спальни</a></li>
-                        <li><a href="#">Гостинные</a></li>
-                    </ul>
-                </li>
-                <li ><a href="#">Услуги</a></li>
-                <li><a href="#">О нас</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
+                <li><a href="#">Солнцезащитные системы</a></li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children"><a href="#">Наши работы</a>
+              <ul>
+                <li><a href="#">Кухни</a></li>
+                <li><a href="#">Спальни</a></li>
+                <li><a href="#">Гостинные</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Услуги</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
         </nav>
       </div>
     </div>
   </header>
-  <div class="slider carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target=".slider" data-slide-to="0" class="active"></li>
-      <li data-target=".slider" data-slide-to="1"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="row d-flex">
-          <div class="col-sm-6 slider__picture">
-            <img src="img/hueta.jpg" alt="Студия GNEZDO">
-          </div>
-          <div class="col-sm-6 slider__text">
-            <h2>Студия текстильного дизайна GNEZDO</h2>
-            <p>Специалисты студии GNEZDO работают в сфере текстильного декорирования интерьеров более 10 лет. Мы хотим
-              быть лидерами и поэтому привлекаем лучших специалистов для работы в нашей команде, постоянно растем и
-              внедряем новые технологии.</p>
-            <a href="#">
-              <button>Подробнее</button>
-            </a>
-          </div>
-        </div>
+  <div class="owl-carousel owl-theme">
+    <div class="owl-carousel__item d-flex justify-content-between flex-row">
+      <img src="img/hueta.jpg">
+      <div class="carousel-text">
+        <h2>Студия текстильного дизайна GNEZDO</h2>
+        <p>Специалисты студии GNEZDO работают в сфере текстильного декорирования интерьеров более 10 лет. Мы хотим быть лидерами и поэтому привлекаем лучших специалистов для работы в нашей команде, постоянно растем и внедряем новые технологии.</p>
+        <a href="#">
+          <button>Подробнее</button>
+        </a>
       </div>
-    <div class="carousel-item">
-      <div class="row d-flex">
-        <div class="col-sm-6 slider__picture">
-          <img src="img/hueta.jpg" alt="Студия GNEZDO">
-        </div>
-        <div class="col-sm-6 slider__text">
-          <h2>Студия текстильного дизайна GNEZDO</h2>
-          <p>Специалисты студии GNEZDO работают в сфере текстильного декорирования интерьеров более 10 лет. Мы хотим
-            быть лидерами и поэтому привлекаем лучших специалистов для работы в нашей команде, постоянно растем и
-            внедряем новые технологии.</p>
-          <a href="#">
-            <button>Подробнее</button>
-          </a>
-        </div>
+    </div>
+    <div class="owl-carousel__item d-flex justify-content-between flex-row">
+      <img src="img/hueta.jpg">
+      <div class="carousel-text">
+        <h2>Студия текстильного дизайна GNEZDO</h2>
+        <p>Специалисты студии GNEZDO работают в сфере текстильного декорирования интерьеров более 10 лет. Мы хотим быть лидерами и поэтому привлекаем лучших специалистов для работы в нашей команде, постоянно растем и внедряем новые технологии.</p>
+        <a href="#">
+          <button>Подробнее</button>
+        </a>
+      </div>
+    </div>
+    <div class="owl-carousel__item d-flex justify-content-between flex-row">
+      <img src="img/hueta.jpg">
+      <div class="carousel-text">
+        <h2>Студия текстильного дизайна GNEZDO</h2>
+        <p>Специалисты студии GNEZDO работают в сфере текстильного декорирования интерьеров более 10 лет. Мы хотим быть лидерами и поэтому привлекаем лучших специалистов для работы в нашей команде, постоянно растем и внедряем новые технологии.</p>
+        <a href="#">
+          <button>Подробнее</button>
+        </a>
       </div>
     </div>
   </div>
-</div>
 <section class="row row--with-paddings d-flex flex-column justify-content-center">
   <h2>Наши работы</h2>
   <ul class="jobs d-flex flex-row flex-wrap">
@@ -253,6 +247,8 @@
 
 <script src="libs/jquery/jquery-3.4.0.min.js"></script>
 <script src="js/jquery.meanmenu.js"></script>
+<!--OwlCarousel scripts-->
+<script src="libs/owlcarousel/owl.carousel.min.js"></script>
 <script src="libs/bootstrap/js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
